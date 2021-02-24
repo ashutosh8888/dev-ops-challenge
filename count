@@ -1,0 +1,1 @@
+cat logfile | awk '{print $1}' | uniq -c | awk '{print $2, $1}' | tail -8
